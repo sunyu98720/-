@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/venv/Include/Common/AutomaticeSendOfMail.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Common/Logger.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Common/ReadSQL.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Common/Tools/Send_email.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Config/ReadConfig.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Config/config.ini" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/PageObject/Scrm_Home.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/PageObject/Scrm_Login.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/PageObject/Scrm_Nav.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/PageObject/Scrm_Personage_user.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/Public/BasePage.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/venv/Include/TestCases/Doris_test.py" charset="UTF-8" />
+  </component>
+</project>

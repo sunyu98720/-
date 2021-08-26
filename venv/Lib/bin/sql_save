@@ -1,0 +1,23 @@
+CREATE TABLE `test_step_execute` (
+  `case_number` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '用例编号',
+  `step` bigint DEFAULT NULL COMMENT '用例步骤',
+  `describe` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '用例描述',
+  `execute` int DEFAULT '1' COMMENT '是否执行 1:执行 2:不执行',
+  `method` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '执行函数',
+  `handle` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '操作',
+  `send_value` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '函数所需值',
+  `expect_result` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '预期结果',
+  `actual_result` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '实际结果',
+  `error_des` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '错误描述'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_cs_0900_ai_ci COMMENT='用例步骤执行表';
+
+
+CREATE TABLE `test_step_module_execute` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `case_name` varchar(255) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '测试名',
+  `test_suit` varchar(255) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '所属套件',
+  `step` varchar(255) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '步骤:用于排序执行步骤',
+  `explain` varchar(255) COLLATE utf8mb4_cs_0900_ai_ci DEFAULT NULL COMMENT '用例说明',
+  `whether_execute` int DEFAULT '1' COMMENT '是否执行 1:执行 0:不执行',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_cs_0900_ai_ci COMMENT='用例步骤执行套件表';
