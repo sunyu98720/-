@@ -78,7 +78,7 @@ class MyTestCase(unittest.TestCase):
             print(Numbers)
             self.assertEqual(60436058, Numbers, "建表数据不一致")
 
-        print("对比完成,通过对比,开始清理表数据")
+        print("对比完成,通过对比,开始清理表数据!")
         for j in range(5):
             drop_sql = "drop table test_sy_" + str(j)
             self.dorisDrive.sqlExecute(drop_sql)
